@@ -49,7 +49,9 @@ if [ -e $decom ]
 then
     printf $"$info Looks like this apk has been decompiled already.\n"
     printf "$que"
-    read -p " Decompile over the existing copy? [y/N] " choice
+    # patch
+    # read -p " Decompile over the existing copy? [y/N] " choice
+    choice="y"
     if [ choice == "y" ]
     then
         rm -r $decom
@@ -64,7 +66,9 @@ if [ -e $links ]
 then
     printf $"$info Looks like links have been already extracted from this apk.\n"
     printf "$que"
-    read -p " Rewrite the previous result? [y/N] " choice
+    # patch
+    #read -p " Rewrite the previous result? [y/N] " choice
+    choice="y"
     if [ choice == "y" ]
     then
         rm $links
