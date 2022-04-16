@@ -101,4 +101,5 @@ extract
 printf $"$run Extracting endpoints\n"
 regxy
 printf $"$info Endpoints saved in: $links\n"
+printf $"$links\n"
 exit
